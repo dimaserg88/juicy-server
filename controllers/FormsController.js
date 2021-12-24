@@ -17,7 +17,8 @@ class FormsController {
 
         let message = `<h1>Привет друг! У нас новый клиент.</h1><br>
         Имя: ${req.body.inputName},<br>
-        Телефон: ${req.body.inputPhone}
+        Телефон: ${req.body.inputPhone},<br>
+        Марка авто: ${req.body.markaAuto}
         `
 
         let info = await transporter.sendMail({
